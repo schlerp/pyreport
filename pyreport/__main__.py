@@ -73,6 +73,11 @@ def update_report(
     with open(output_file, "w+") as f:
         f.write(filled_template)
 
+    # create the sections
+    for section in context["sections"]:
+        with open(os.path.join("report", section["path"]), "w+") as f:
+            f.write(f"This is the {section['name']} section.")
+
 
 def _test(
     template_name="root.tex", template_dir="pyreport/templates", output_file="test.tex"
