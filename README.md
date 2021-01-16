@@ -12,6 +12,8 @@ pip install .
 
 ## Usage
 
+You must create a project using this tool, edit the `config.yml` file, then update the project using this tool. The update step will create the actual tex file and section files in the report directory.
+
 ### Create project
 create a new project by running the following and answering the prompts
 
